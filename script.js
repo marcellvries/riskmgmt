@@ -8,7 +8,7 @@ function calculateRisk() {
   const takeProfitPrice = parseFloat(document.getElementById('take-profit-price').value);
 
   // Calculate stoploss
-  const stoplossPercent = ((entryPrice - stoplossPrice) / entryPrice) * 100;
+  const stoplossPercent = ((entryPrice - stoplossPrice) / entryPrice);
   
   // Calculate order quantity
   const orderQuantity = ((portfolioBalance * (maxLossPerTrade / 100)) / (stoplossPercent * 100) );
