@@ -11,7 +11,7 @@ function calculateRisk() {
   const stoplossPercent = (1- (stoplossPrice / entryPrice))*100;
   
   // Calculate order quantity
-  const orderQuantity = ((portfolioBalance * (maxLossPerTrade/100)) / (stoplossPercent ) / entryPrice);
+  const orderQuantity = portfolioBalance * (maxLossPerTrade/100) / stoplossPercent / entryPrice;
   
   // Calculate margin
   const margin = entryPrice * orderQuantity / leverage;
