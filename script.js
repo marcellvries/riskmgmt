@@ -11,7 +11,7 @@ function calculateRisk() {
   const stoplossPercent = (1- (stoplossPrice / entryPrice));
   
   // Calculate order quantity
-  const orderQuantity = ((portfolioBalance * (maxLossPerTrade)) / stoplossPercent );
+  const orderQuantity = ((portfolioBalance * (maxLossPerTrade)) / stoplossPercent / entryPrice);
   
   // Calculate margin
   const margin = entryPrice * orderQuantity / leverage;
@@ -20,7 +20,7 @@ function calculateRisk() {
   const liquidationPrice = ((entryPrice * orderQuantity) - margin) / orderQuantity;
 
   // Output results
-  document.getElementById('stoploss-percent').innerHTML = stoplossPercent.toFixed(2) + '%';
+  document.getElementById('stoploss-percent').innerHTML = stoplossPercent.toFixed(2);
   document.getElementById('order-quantity').innerHTML = orderQuantity.toFixed(2);
   document.getElementById('margin').innerHTML = margin.toFixed(2);
   document.getElementById('liquidation-price').innerHTML = liquidationPrice.toFixed(2);
