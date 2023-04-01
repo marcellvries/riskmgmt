@@ -37,8 +37,8 @@ function calculateRisk() {
           borderColor: '#007bff',
           fill: false,
           data: [
-            { x: 0, y: entryPrice },
-            { x: 1, y: entryPrice }
+            { x: "0", y: entryPrice },
+            { x: "100", y: entryPrice }
           ]
         },
         {
@@ -46,8 +46,8 @@ function calculateRisk() {
           borderColor: '#dc3545',
           fill: false,
           data: [
-            { x: 0, y: stoplossPrice },
-            { x: 1, y: stoplossPrice }
+            { x: "0", y: stoplossPrice },
+            { x: "100", y: stoplossPrice }
            ]
         },
         {
@@ -55,8 +55,8 @@ function calculateRisk() {
           borderColor: '#28a745',
           fill: false,
           data: [
-            { x: 0, y: takeProfitPrice },
-            { x: 1, y: takeProfitPrice }
+            { x: "0", y: takeProfitPrice },
+            { x: "100", y: takeProfitPrice }
            ]
         },
         {
@@ -64,8 +64,8 @@ function calculateRisk() {
           borderColor: '#ffc107',
           fill: false,
           data: [
-            { x: 0, y: liquidationPrice },
-            { x: 1, y: liquidationPrice }
+            { x: "0", y: liquidationPrice },
+            { x: "100", y: liquidationPrice }
            ]
         }
       ]
