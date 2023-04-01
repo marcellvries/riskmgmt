@@ -79,7 +79,12 @@ function calculateRisk() {
           ticks: {
             beginAtZero: false
           }
-        }]
+        }],
+      xAxes: [{
+          ticks: {
+            beginAtZero: true
+          }
+        }]  
       }
     }
   });
