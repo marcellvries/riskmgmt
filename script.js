@@ -1,7 +1,7 @@
 function calculateRisk() {
   // Get input values
   const portfolioBalance = parseFloat(document.getElementById('portfolio-balance').value);
-  const maxLossPerTrade = parseFloat(document.getElementById('max-loss-per-trade').value);
+  const maxLossPerTrade = parseFloat(document.getElementById('max-loss-per-trade').value/100);
   const entryPrice = parseFloat(document.getElementById('entry-price').value);
   const stoplossPrice = parseFloat(document.getElementById('stoploss-price').value);
   const leverage = parseFloat(document.getElementById('leverage').value);
