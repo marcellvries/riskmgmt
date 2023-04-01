@@ -45,7 +45,10 @@ function calculateRisk() {
           label: 'Stop Loss Price',
           borderColor: '#dc3545',
           fill: false,
-          data: [stoplossPrice, stoplossPrice]
+          data: [
+            { x: stoplossPrice, y: 'Stop Loss Price' },
+            { x: stoplossPrice, y: null }
+          ]
         },
         {
           label: 'Take Profit Price',
