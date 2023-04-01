@@ -46,21 +46,27 @@ function calculateRisk() {
           borderColor: '#dc3545',
           fill: false,
           data: [
-            { x: stoplossPrice, y: 'Stop Loss Price' },
-            { x: stoplossPrice, y: null }
-          ]
+            { x: 0, y: stoplossPrice },
+            { x: 1, y: stoplossPrice }
+           ]
         },
         {
           label: 'Take Profit Price',
           borderColor: '#28a745',
           fill: false,
-          data: [takeProfitPrice, takeProfitPrice]
+          data: [
+            { x: 0, y: takeProfitPrice },
+            { x: 1, y: takeProfitPrice }
+           ]
         },
         {
           label: 'Estimated Liquidation Price',
           borderColor: '#ffc107',
           fill: false,
-          data: [liquidationPrice, liquidationPrice]
+          data: [
+            { x: 0, y: liquidationPrice },
+            { x: 1, y: liquidationPrice }
+           ]
         }
       ]
     },
