@@ -36,7 +36,10 @@ function calculateRisk() {
           label: 'Entry Price',
           borderColor: '#007bff',
           fill: false,
-          data: [entryPrice, entryPrice]
+          data: [
+            { x: 0, y: entryPrice },
+            { x: 1, y: entryPrice }
+          ]
         },
         {
           label: 'Stop Loss Price',
