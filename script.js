@@ -20,7 +20,7 @@ function calculateRisk() {
   const liquidationPrice = ((entryPrice * orderQuantity) - margin) / orderQuantity;
 
   // Output results
-  document.getElementById('stoploss-percent').innerHTML = stoplossPercent.toFixed(2);
+  document.getElementById('stoploss-percent').innerHTML = stoplossPercent.toFixed(2)*100;
   document.getElementById('order-quantity').innerHTML = orderQuantity.toFixed(2);
   document.getElementById('margin').innerHTML = margin.toFixed(2);
   document.getElementById('liquidation-price').innerHTML = liquidationPrice.toFixed(2);
