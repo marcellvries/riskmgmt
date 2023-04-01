@@ -39,7 +39,7 @@ canvas {
 .input-field {
   display: block;
   margin: 10px 0;
-  width: 50px;
+  width: 250px !important;
   padding: 10px;
   font-size: 12px;
   border: none;
