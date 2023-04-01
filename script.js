@@ -25,7 +25,7 @@ function calculateRisk() {
   document.getElementById('margin').innerHTML = margin.toFixed(2);
   document.getElementById('liquidation-price').innerHTML = liquidationPrice.toFixed(2);
   
-  // Create chart
+ // Create chart
   const ctx = document.getElementById('myChart').getContext('2d');
   const myChart = new Chart(ctx, {
     type: 'line',
@@ -35,21 +35,25 @@ function calculateRisk() {
         {
           label: 'Entry Price',
           borderColor: '#007bff',
+          fill: false,
           data: [entryPrice, entryPrice]
         },
         {
           label: 'Stop Loss Price',
           borderColor: '#dc3545',
+          fill: false,
           data: [stoplossPrice, stoplossPrice]
         },
         {
           label: 'Take Profit Price',
           borderColor: '#28a745',
+          fill: false,
           data: [takeProfitPrice, takeProfitPrice]
         },
         {
           label: 'Estimated Liquidation Price',
           borderColor: '#ffc107',
+          fill: false,
           data: [liquidationPrice, liquidationPrice]
         }
       ]
