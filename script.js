@@ -56,7 +56,7 @@ function calculateRisk() {
     },
     options: {
       responsive: true,
-      maintainAspectRatio: false,
+      maintainAspectRatio: true,
       spanGaps: true,
       scales: {
         yAxes: [{
