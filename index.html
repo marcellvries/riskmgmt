@@ -8,27 +8,27 @@
 <body>
   <div class="form-group">
     <label for="portfolio-balance">Portfolio balance:</label>
-    <input type="text" class="form-control" id="portfolio-balance" placeholder="Enter portfolio balance">
+    <input type="number" class="form-control" id="portfolio-balance" placeholder="Enter portfolio balance" value="1000">
   </div>
   <div class="form-group">
     <label for="max-loss-per-trade">Max % loss per trade:</label>
-    <input type="text" class="form-control" id="max-loss-per-trade" placeholder="Enter max % loss per trade">
+    <input type="number" class="form-control" id="max-loss-per-trade" placeholder="Enter max % loss per trade" value="10">
   </div>
   <div class="form-group">
     <label for="entry-price">Entry price:</label>
-    <input type="text" class="form-control" id="entry-price" placeholder="Enter entry price">
+    <input type="number" class="form-control" id="entry-price" placeholder="Enter entry price" value="100">
   </div>
   <div class="form-group">
     <label for="stoploss-price">Stoploss price:</label>
-    <input type="text" class="form-control" id="stoploss-price" placeholder="Enter stoploss price">
+    <input type="number" class="form-control" id="stoploss-price" placeholder="Enter stoploss price" value="90">
   </div>
   <div class="form-group">
     <label for="leverage">Leverage:</label>
-    <input type="text" class="form-control" id="leverage" placeholder="Enter leverage">
+    <input type="number" class="form-control" id="leverage" placeholder="Enter leverage" value="5">
   </div>
   <div class="form-group">
     <label for="take-profit-price">Take profit price:</label>
-    <input type="text" class="form-control" id="take-profit-price" placeholder="Enter take profit price">
+    <input type="number" class="form-control" id="take-profit-price" placeholder="Enter take profit price" value="110">
   </div>
   <button type="submit" class="btn btn-primary" onclick="calculateRisk()">Calculate Risk</button>
   <div class="output">
