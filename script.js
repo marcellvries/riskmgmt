@@ -35,22 +35,22 @@ function calculateRisk() {
         {
           label: 'Entry Price',
           borderColor: '#007bff',
-          data: [entryPrice,entryPrice]
+          data: [entryPrice]
         },
         {
           label: 'Stop Loss Price',
           borderColor: '#dc3545',
-          data: [stoplossPrice,stoplossPrice]
+          data: [stoplossPrice]
         },
         {
           label: 'Take Profit Price',
           borderColor: '#28a745',
-          data: [takeProfitPrice,takeProfitPrice]
+          data: [takeProfitPrice]
         },
         {
           label: 'Estimated Liquidation Price',
           borderColor: '#ffc107',
-          data: [liquidationPrice,liquidationPrice]
+          data: [liquidationPrice]
         }
       ]
     },
