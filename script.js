@@ -14,7 +14,7 @@ function calculateRisk() {
   const orderQuantity = ((portfolioBalance * maxLossPerTrade) / stoplossPercent );
   
   // Calculate margin
-  const margin = entryPrice * orderQuantity * leverage;
+  const margin = entryPrice * orderQuantity / leverage;
   
   // Calculate estimated liquidation price
   const liquidationPrice = ((entryPrice * orderQuantity) - margin) / orderQuantity;
