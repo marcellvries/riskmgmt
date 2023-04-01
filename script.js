@@ -17,7 +17,7 @@ function calculateRisk() {
   const margin = entryPrice * orderQuantity / leverage;
   
   // Calculate estimated liquidation price
-  const liquidationPrice = ((entryPrice * orderQuantity) - margin) / orderQuantity;
+  const liquidationPrice = (((entryPrice * orderQuantity) - margin) / orderQuantity)+ (0.011* entryPrice);
 
   // Output results
   document.getElementById('stoploss-percent').innerHTML = (stoplossPercent*100).toFixed(2) +'%';
