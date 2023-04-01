@@ -30,24 +30,29 @@ function calculateRisk() {
   const myChart = new Chart(ctx, {
     type: 'line',
     data: {
-      labels: [entryPrice, stoplossPrice, takeProfitPrice, liquidationPrice],
-      datasets: [{
-        label: 'Price',
-        data: [entryPrice, stoplossPrice, takeProfitPrice, liquidationPrice],
-        backgroundColor: [
-          'rgba(255, 99, 132, 0.2)',
-          'rgba(54, 162, 235, 0.2)',
-          'rgba(255, 206, 86, 0.2)',
-          'rgba(75, 192, 192, 0.2)'
-        ],
-        borderColor: [
-          'rgba(255, 99, 132, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)'
-        ],
-        borderWidth: 1
-      }]
+      labels: ['Price'],
+      datasets: [
+        {
+          label: 'Entry Price',
+          borderColor: '#007bff',
+          data: [entryPrice]
+        },
+        {
+          label: 'Stop Loss Price',
+          borderColor: '#dc3545',
+          data: [stoplossPrice]
+        },
+        {
+          label: 'Take Profit Price',
+          borderColor: '#28a745',
+          data: [takeProfitPrice]
+        },
+        {
+          label: 'Estimated Liquidation Price',
+          borderColor: '#ffc107',
+          data: [liquidationPrice]
+        }
+      ]
     },
     options: {
       scales: {
