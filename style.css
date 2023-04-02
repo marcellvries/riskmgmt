@@ -71,7 +71,7 @@ body {
 
 .header {
   display: flex;
-  align-items: left;
+  align-items: center;
   justify-content: center;
   margin: 20px 0;
 }
@@ -79,4 +79,8 @@ body {
 .header img {
   height: 50px;
   margin-right: 10px;
+}
+
+.logo {
+  float: left;
 }
