@@ -83,7 +83,7 @@ function calculateRisk() {
         xAxes: [{
           ticks: {
             offset: true,
-            beginAtZero: true
+            beginAtZero: false
           }
         }]  
       }
