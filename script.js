@@ -80,6 +80,13 @@ function calculateRisk() {
             beginAtZero: false
           }
         }],
+        xAxes: [{
+          ticks: {
+            offset: true,
+            beginAtZero: false
+          }
+        }]  
+
       }
     }
   });
